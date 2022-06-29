@@ -26,3 +26,11 @@ page-instance ->> page-instance: await page.pdf(options)
 Note right of page-instance: Creates the pdf file with <br/> the given options
 browser-instance ->> browser-instance: await browser.close();
 ```
+
+**Output Example**
+
+<object data="https://github.com/juanwhite99/HandlebarsPuppeteer/blob/main/pdf/Report.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/juanwhite99/HandlebarsPuppeteer/blob/main/pdf/Report.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/juanwhite99/HandlebarsPuppeteer/blob/main/pdf/Report.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
