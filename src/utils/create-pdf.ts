@@ -5,11 +5,11 @@ import * as path from 'path';
 
 export async function createPDF() {
 	const html = await handlebarsCompiledTemplate();
-	var pdfPath = path.join('pdf', `Report.pdf`);
+	const pdfPath = path.join('pdf', `Report.pdf`);
 
 	await deletePreviousFiles();
 
-	var options: PDFOptions = {
+	const options: PDFOptions = {
 		format: 'a4',
 		displayHeaderFooter: false,
 		printBackground: true,
@@ -24,7 +24,7 @@ export async function createPDF() {
 		headless: true
 	});
 
-	var page = await browser.newPage();
+	const page = await browser.newPage();
 
 	await page.goto(`data:text/html;charset=UTF-8,${html}`, {
 		waitUntil: 'networkidle0'
