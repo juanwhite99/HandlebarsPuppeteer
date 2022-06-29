@@ -1,5 +1,3 @@
-const { writeFile } = require("fs/promises");
-
 import { data } from '../data/data';
 import handlebars from 'handlebars';
 import * as fs from 'fs';
